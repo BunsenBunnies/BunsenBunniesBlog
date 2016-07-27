@@ -1,12 +1,24 @@
+
+@import url:("https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Shadows+Into+Light");
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+/*Django tutorial CSS below here.*/
+
+
 h1 a {
     color: #078902;
-    font-family: 'Lobster';
-}
+    font-family: 'Indie Flower', cursive;
+    }
 body {
     padding-left: 15px;
 }
 .page-header {
     background-color: #078902;
+    background-image: url("{% static "IMG/BBLOGO120/BannerA.jpg" %}")
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -19,12 +31,8 @@ body {
 
 .content {
     margin-left: 40px;
+font-family: "Varela Round", sans-serif;
 }
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
-
 .date {
     color: #828282;
 }
@@ -50,4 +58,161 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+/*ANNS STYLES CSS BELOW HERE FOR INCORPERATION*/
+/* the # is usedto define an id.
+The id selector uses the id attribute of an HTML element to select a specific element.
+An id should be unique within a page, so the id selector is used if you want to select a single, unique element.
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element. */
+
+
+/*General layout Styles shown below.*/
+
+header {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: ;
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+header div {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: ;
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+body {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: mint;
+    background-image: ;
+    background-repeat: no-repeat;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+body div {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: ;
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+
+/* Div followed by img will affect only img tags within a Div tag */
+
+div img {
+    align-content: right;
+    margin: ;
+    border: 0px solid #000000;
+    float: center;
+    max-height: auto;
+    max-width: auto;
+}
+
+footer {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: rgba(30, 255, 194, 0.56);
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+header {
+    /*header element*/
+    display: flex;
+    flex-flow: column;
+    /* items fall below each other */
+}
+
+.head {
+    display: flex;
+    flex-flow: row;
+    /*items flow next to each other side-by-side*/
+    justify-content: space-between;
+    /* first and last items at edges, space between spread evenly*/
+}
+
+.head img {
+    /*img tags inside the element with class 'head'*/
+    height: auto;
+    width: 100%;
+}
+
+#comic {
+    display: flex;
+    flex-flow: row;
+}
+
+
+/* applies to sidebar-left and sidebar-right*/
+
+.sidebar-left,
+.sidebar-right {
+    flex: 1;
+    /*flex ratio*/
+}
+
+.main {
+    flex: 3;
+    /* flex ratio*/
+}
+
+#news {
+    display: flex;
+    flex-flow: row wrap;
+    /* flows side-by-side, items fall on new line if too big to fit in one row*/
+    margin-top: 24rem;
+    /*just to get it out from under the comic*/
+    justify-content: space-around;
+    /*items spread evenly on page*/
 }

@@ -1,0 +1,348 @@
+/* the # is usedto define an id.
+The id selector uses the id attribute of an HTML element to select a specific element.
+An id should be unique within a page, so the id selector is used if you want to select a single, unique element.
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element. */
+
+
+/*General layout Styles shown below.*/
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+html,
+body {
+    url("http://codepen.io/images/classy_fabric.png");
+}
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-ou;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-11:checked ~ .nav-dots label#img-dot-11,
+input#img-12:checked ~ .nav-dots label#img-dot-12,
+input#img-13:checked ~ .nav-dots label#img-dot-13,
+input#img-14:checked ~ .nav-dots label#img-dot-14,
+input#img-15:checked ~ .nav-dots label#img-dot-15,
+input#img-16:checked ~ .nav-dots label#img-dot-16,
+input#img-17:checked ~ .nav-dots label#img-dot-17,
+input#img-18:checked ~ .nav-dots label#img-dot-18,
+input#img-19:checked ~ .nav-dots label#img-dot-19,
+{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Slider */
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+div#slider {
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+header {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: ;
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+header div {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: ;
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+body {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: mint;
+    background-image: ;
+    background-repeat: no-repeat;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+body div {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: ;
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+
+/* Div followed by img will affect only img tags within a Div tag */
+
+div img {
+    align-content: right;
+    margin: ;
+    border: 0px solid #000000;
+    float: center;
+    max-height: auto;
+    max-width: auto;
+}
+
+footer {
+    /* Alignment tools */
+    align-content: center;
+    text-align: center;
+    /* Background controls */
+    background-color: rgba(30, 255, 194, 0.56);
+    background-image: ;
+    /*Font controls */
+    font-size: 18px;
+    font-weight: bold;
+    color: Black;
+    /*Segment controls*/
+    border: 0px solid #999;
+    margin: ;
+    padding: ;
+}
+
+header {
+    /*header element*/
+    display: flex;
+    flex-flow: column;
+    /* items fall below each other */
+}
+
+.head {
+    display: flex;
+    flex-flow: row;
+    /*items flow next to each other side-by-side*/
+    justify-content: space-between;
+    /* first and last items at edges, space between spread evenly*/
+}
+
+.head img {
+    /*img tags inside the element with class 'head'*/
+    height: 100%;
+    width: 100%;
+}
+
+#comic {
+    display: flex;
+    flex-flow: row;
+}
+
+
+/* applies to sidebar-left and sidebar-right*/
+
+.sidebar-left,
+.sidebar-right {
+    flex: 1;
+    /*flex ratio*/
+}
+
+.main {
+    flex: 3;
+    /* flex ratio*/
+}
+
+#news {
+    display: flex;
+    flex-flow: row wrap;
+    /* flows side-by-side, items fall on new line if too big to fit in one row*/
+    margin-top: 24rem;
+    /*just to get it out from under the comic*/
+    justify-content: space-around;
+    /*items spread evenly on page*/
+}
