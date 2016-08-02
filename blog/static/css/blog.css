@@ -7,8 +7,22 @@ font-family: 'Shadows Into Light', cursive;
 */
 
 /*Django tutorial CSS below here.*/
+.intro h1 {
+    color: #313131;
+    font-size: 14pt ;
+    font-family: 'Indie Flower', cursive;
+}
 
-
+.intro h2 {
+    color: #ff0000;
+    font-size: 14pt ;
+    font-family: 'Pacifico', cursive;
+}
+.intro h3 {
+    color: #313131;
+    font-size: 14pt ;
+    font-family: 'Shadows Into Light', cursive;
+}
 h1 a {
     color: #078902;
     font-family: 'Indie Flower', cursive;
