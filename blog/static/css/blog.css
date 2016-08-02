@@ -8,9 +8,27 @@ font-family: 'Shadows Into Light', cursive;
 /*MAIN SITE CONTROLS*/
 
 .intro{
+    display: flex;
+    flex-flow: row;
+    /*items flow next to each other side-by-side*/
+    justify-content: space-around;
+    /* first and last items at edges, space between spread evenly*/
+    height: auto;
     padding: 10px 10px 10px 10px;
 }
 
+.intro-side1{
+  flex-grow: <1>; /* default 0 */
+    align-content: center;
+}
+.intro-text{
+  flex-grow: <2>; /* default 0 */
+  align-content: center;
+}
+.intro-side2{
+  flex-grow: <1>; /* default 0 */
+    align-content: center;
+}
 .intro h1 {
     color: #313131;
     font-size: 18pt ;
@@ -35,7 +53,7 @@ h1 a {
     }
 
 body {
-    padding-left: 1px;
+    padding: 10px 10px 10px 10px;
 }
 
 img {
@@ -65,14 +83,7 @@ header {
     justify-content: space-around;
     /* first and last items at edges, space between spread evenly*/
 }
-.message {
-      display: flex;
-    flex-flow: row;
-    /*items flow next to each other side-by-side*/
-    justify-content: space-around;
-    /* first and last items at edges, space between spread evenly*/
-    height: auto;
-}
+
 .Archive {
     display: flex;
     flex-flow: row;
@@ -92,11 +103,11 @@ header {
     
 }
 
-.News {
+.blog {
     display: flex;
     flex-flow: row wrap;
     /* flows side-by-side, items fall on new line if too big to fit in one row*/
-    justify-content: space-around;
+    justify-content: center;
     /*items spread evenly on page*/
 }
 
@@ -104,6 +115,7 @@ header {
 /*FOOTER SECTION CONTROLS*/
 .page-foot {
     background-color: #009a76;
+    align-content: center;
     margin-top: 5;
     padding: 10px 10px 10px 10px;
 }
