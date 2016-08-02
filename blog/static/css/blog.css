@@ -5,7 +5,8 @@ font-family: 'Shadows Into Light', cursive;
 */
 /*To select an element with a specific id, write a hash (#) character, followed by the id of the element. */
 
-/*Django tutorial CSS below here.*/
+/*MAIN SITE CONTROLS*/
+
 .intro{
     padding: 10px 10px 10px 10px;
 }
@@ -13,21 +14,36 @@ font-family: 'Shadows Into Light', cursive;
 .intro h1 {
     color: #313131;
     font-size: 18pt ;
-    font-family: 'Pacifico', cursive;
-    
-}
+    font-family: 'Pacifico', cursive;  
+} /*TITLE FONT*/
 
 .intro h2 {
     color: #009a76;
     font-size: 16pt ;
     font-family: 'Indie Flower', cursive;
-}
+}/*SUB-TITLE FONT*/
+
 .intro h3 {
     color: #313131;
     font-size: 14pt ;
     font-family: 'Shadows Into Light', cursive;
+} /*MAIN FONT*/
+
+h1 a {
+    color: #078902;
+    font-family: 'Indie Flower', cursive;
+    }
+
+body {
+    padding-left: 1px;
 }
 
+img {
+    height: auto;
+    width: 100%;
+}
+
+/*FLEX BOX CONTROLS FOR DIFFERENT SECTIONS */
 header {
     /*header element*/
     display: flex;
@@ -76,11 +92,6 @@ header {
     
 }
 
-img {
-    height: auto;
-    width: 100%;
-}
-
 .News {
     display: flex;
     flex-flow: row wrap;
@@ -89,16 +100,10 @@ img {
     /*items spread evenly on page*/
 }
 
-h1 a {
-    color: #078902;
-    font-family: 'Indie Flower', cursive;
-    }
 
-body {
-    padding-left: 1px;
-}
+/*FOOTER SECTION CONTROLS*/
 .page-foot {
-    background-color: #06a700;
+    background-color: #009a76;
     margin-top: 5;
     padding: 10px 10px 10px 10px;
 }
@@ -113,6 +118,9 @@ body {
     font-size: 16pt;
     text-decoration: none;
 }
+
+
+/*BLOG SECTION CONTROLS*/
 
 .content {
     margin-left: 40px;
